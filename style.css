@@ -1,0 +1,139 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100dvh;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 10px;
+  color: #c9d1d9;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 95%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #161b22;
+}
+
+.input-section,
+.output-section {
+  width: 50%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+#text-input {
+  padding: 15px;
+  width: 100%;
+  height: 90%;
+  border: 1px solid #30363d;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+#text-output {
+  width: 100%;
+  height: 94%;
+  overflow-y: auto;
+  padding: 15px;
+  border: 1px solid #30363d;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #30363d;
+  margin: 1em 0;
+}
+
+.inp-cnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.out-cnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy-btn {
+  background-color: #58a6ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.8rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#copy-btn:hover {
+  background-color: #1f8fff;
+}
+
+#copy-btn:active {
+  background-color: #0077cc;
+}
+
+#copy-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #1f8fff;
+}
+
+@media (max-width: 786px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+  }
+
+  .input-section {
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+  }
+
+  .output-section {
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+  }
+}
